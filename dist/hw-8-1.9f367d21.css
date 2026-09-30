@@ -1,0 +1,289 @@
+:root {
+  color: #172033;
+  background: #f3f6fc;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button, input {
+  font: inherit;
+}
+
+.page {
+  width: min(100% - 32px, 960px);
+  margin: 0 auto;
+  padding: 52px 0 72px;
+}
+
+.hero {
+  color: #fff;
+  background: linear-gradient(125deg, #0f766e, #2563eb);
+  border-radius: 24px;
+  padding: 42px;
+  box-shadow: 0 18px 38px #0f766e30;
+}
+
+.eyebrow, .section-number {
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  margin: 0 0 7px;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.eyebrow {
+  color: #ccfbf1;
+}
+
+.section-number {
+  color: #0f766e;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.3rem);
+  line-height: 1.05;
+}
+
+.hero > p:last-child {
+  color: #dbeafe;
+  margin: 14px 0 0;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  margin-top: 26px;
+  padding: 28px;
+  box-shadow: 0 8px 23px #17203310;
+}
+
+.section-heading {
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 18px;
+  display: flex;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.section-heading > p {
+  color: #64748b;
+  text-align: right;
+  max-width: 350px;
+  margin: 0;
+}
+
+.form-grid {
+  grid-template-columns: 1fr 1fr auto auto;
+  align-items: end;
+  gap: 12px;
+  display: grid;
+}
+
+.profile-form {
+  grid-template-columns: 1fr 1fr auto;
+}
+
+label {
+  color: #3f4b61;
+  gap: 7px;
+  font-size: .87rem;
+  font-weight: 700;
+  display: grid;
+}
+
+input {
+  color: #172033;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+}
+
+input:focus {
+  border-color: #0f766e;
+  outline: 3px solid #99f6e4;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background: #0f766e;
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 14px;
+  font-weight: 750;
+  transition: transform .15s, background .15s;
+}
+
+button:hover {
+  background: #0b5f58;
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  color: #0f766e;
+  background: #ccfbf1;
+}
+
+.button-secondary:hover {
+  background: #99f6e4;
+}
+
+.button-danger {
+  background: #dc2626;
+}
+
+.button-danger:hover {
+  background: #b91c1c;
+}
+
+.status {
+  color: #047857;
+  min-height: 1.25em;
+  margin: 12px 0 0;
+  font-size: .92rem;
+}
+
+.bookmarks-list, .products-list {
+  gap: 12px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.bookmark-item {
+  background: #f8fafc;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  display: flex;
+}
+
+.bookmark-item a {
+  overflow-wrap: anywhere;
+  color: #0f766e;
+  font-weight: 750;
+}
+
+.bookmark-actions {
+  flex-shrink: 0;
+  gap: 8px;
+  display: flex;
+}
+
+.bookmark-actions button {
+  padding: 8px 10px;
+  font-size: .85rem;
+}
+
+.search-label {
+  max-width: 520px;
+}
+
+.products-list {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.product-card {
+  background: linear-gradient(145deg, #fff, #f0fdfa);
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  min-height: 190px;
+  padding: 20px;
+}
+
+.product-card article {
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+}
+
+.product-id {
+  color: #0f766e;
+  font-size: .8rem;
+  font-weight: 750;
+}
+
+.product-card h3 {
+  margin: 15px 0 7px;
+  font-size: 1.17rem;
+}
+
+.description {
+  color: #536177;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.price {
+  color: #047857;
+  margin: auto 0 0;
+  padding-top: 16px;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.empty-state {
+  color: #64748b;
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 12px;
+  grid-column: 1 / -1;
+  padding: 22px;
+}
+
+@media (width <= 690px) {
+  .page {
+    width: min(100% - 24px, 960px);
+    padding-top: 24px;
+  }
+
+  .hero, .panel {
+    padding: 24px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p {
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .form-grid, .profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .bookmark-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bookmark-actions {
+    width: 100%;
+  }
+
+  .bookmark-actions button {
+    flex: 1;
+  }
+}
+/*# sourceMappingURL=hw-8-1.9f367d21.css.map */

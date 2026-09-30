@@ -1,0 +1,12 @@
+{{#each products}}
+  <li class="product-card">
+    <article>
+      <span class="product-id">Товар #{{id}}</span>
+      <h3 class="name">{{name}}</h3>
+      <p class="description">{{description}}</p>
+      <p class="price">{{price}} ₴</p>
+    </article>
+  </li>
+{{else}}
+  <li class="empty-state">За вашим запитом товарів не знайдено.</li>
+{{/each}}

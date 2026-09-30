@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="uk"><head><link rel="stylesheet" href="/hw-8-1.9f367d21.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Домашня робота">
+    <title>Мої дані та товари</title>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Домашня робота · JSON і localStorage</p>
+        <h1>Мої дані та товари</h1>
+        <p>
+          Закладки й дані форми зберігаються після перезавантаження сторінки.
+        </p>
+      </header>
+
+      <section class="panel" aria-labelledby="bookmarks-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">01</p>
+            <h2 id="bookmarks-title">Закладки</h2>
+          </div>
+          <p>Додавайте, редагуйте й видаляйте посилання.</p>
+        </div>
+        <form id="bookmark-form" class="form-grid">
+          <label>Назва
+            <input id="bookmark-title" name="title" required="" maxlength="60" placeholder="Наприклад, GoITeens"></label>
+          <label>Посилання
+            <input id="bookmark-url" name="url" required="" type="url" placeholder="https://example.com"></label>
+          <button id="bookmark-submit" type="submit">Додати</button>
+          <button id="bookmark-cancel" class="button-secondary" type="button" hidden="">
+            Скасувати
+          </button>
+        </form>
+        <p id="bookmark-message" class="status" aria-live="polite"></p>
+        <ul id="bookmarks-list" class="bookmarks-list"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="profile-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">02</p>
+            <h2 id="profile-title">Форма збереження даних</h2>
+          </div>
+          <p>Значення форми зберігаються в localStorage.</p>
+        </div>
+        <form id="profile-form" class="form-grid profile-form">
+          <label>Логін
+            <input id="login" name="login" required="" minlength="2" placeholder="Ваш логін"></label>
+          <label>Пароль
+            <input id="password" name="password" required="" minlength="4" type="password" placeholder="Ваш пароль"></label>
+          <button type="submit">Зберегти дані</button>
+        </form>
+        <p id="profile-message" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="products-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">03</p>
+            <h2 id="products-title">Каталог товарів</h2>
+          </div>
+          <p id="products-count" aria-live="polite"></p>
+        </div>
+        <label class="search-label" for="product-search">Пошук товару
+          <input id="product-search" type="search" placeholder="Введіть назву або опис товару">
+        </label>
+        <ul id="products-list" class="products-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="/hw-8-1.6528c13b.js"></script>
+  
+
+</body></html>

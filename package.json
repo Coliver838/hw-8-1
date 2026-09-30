@@ -1,0 +1,14 @@
+{
+  "name": "hw-8-local-storage-products",
+  "version": "1.0.0",
+  "description": "Домашня робота: localStorage, JSON і пошук товарів",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}
